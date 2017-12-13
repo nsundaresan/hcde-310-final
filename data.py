@@ -1,9 +1,7 @@
 import urllib, json, xmltodict, csv
-import plotly.plotly as py
-from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+from plotly.offline import plot
 from plotly.graph_objs import *
 from api_keys import *
-import numpy as np
 
 def getHouseInformation(myaddress,mycitystatezip):
     """
@@ -214,7 +212,7 @@ def generateHousePlot(myHouse):
     )
 
     fig = dict(data=data, layout=layout)
-    url = plot(fig, filename='app/static/houseplot.html', auto_open=False, show_link=False)
+    url = plot(fig, filename='static/houseplot.html', auto_open=False, show_link=False)
     return(url)
 
 
@@ -260,5 +258,5 @@ def generateNeighborhoodPlot(neighborhood):
     )
 
     fig = dict(data=data, layout=layout)
-    url = plot(fig, filename='app/static/neighborhoodplot.html', auto_open=False, show_link=False)
+    url = plot(fig, filename='static/neighborhoodplot.html', auto_open=False, show_link=False)
     return(url)
