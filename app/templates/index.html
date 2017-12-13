@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id='main-page'>
+      <p id='name'>| Nanda Sundaresan |</p>
+      <p id='main-title'>A Safer Home</p>
+      <p id='main-description'>
+        This application provides an interactive tool that maps homes for sale
+        in the Seattle area, and all police report incidents that have occurred
+        in the city of Seattle in the last three months. The purpose of this
+        project is to create a visual representation of police incidents in
+        Seattle in relation to homes for sale that can aid potential homebuyers
+        in their decision to purchase a Seattle home. The police
+        report incidents is not a comprehensive representation of crime in an area,
+        but ideally, this application will help homebuyers gain a better
+        understanding of the current safety surrounding their future home.
+      </p>
+
+      <div id='sub-descriptions'>
+        <div class='info'>
+          <p class='sub-title'>INTENDED USE</p>
+          <p class='sub-content'>
+            While this application is useful to any Seattle resident who is curious to
+            the crime rates surrounding their home, the intended audience is potential
+            homebuyers who are interested in a Seattle home. Ideally, the user will
+            visit this site with prior knowledge of the specific address to a home for
+            sale, or a specific neighborhood of Seattle that they are interested in purchasing
+            a home in, in order to optimize their experience.
+          </p>
+        </div>
+
+        <div class='info'>
+          <p class='sub-title'>DATA</p>
+          <p class='sub-content'>
+            This app utilizes two datasets. The first dataset, collected by the
+            <a href="https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Police-Report-Incident/7ais-f98f">
+            Seattle Police Department,</a>contains data on reported Seattle
+            police incidents, updated every 15 minutes. The crime data is the most recent,
+            taken from the last three months up until today.The second dataset, collected by,
+            <a href="https://www.zillow.com/howto/api/APIOverview.htm">Zillow</a>
+            contains property information for houses listed for sale, which is updated daily.'
+          </p>
+        </div>
+
+        <div class='info'>
+          <p class='sub-title'>STRUCTURE</p>
+          <p class='sub-content'>
+            There are two different options of how you can choose to view the data:
+            searching by a home address, or searching by a neighborhood. In both of these options,
+            you will be able to select and filter the kinds of police reports they wish to
+            see on the map.
+          </p>
+        </div>
+
+      </div>
+    </div>
+{% endblock %}
