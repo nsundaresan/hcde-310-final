@@ -27,7 +27,7 @@ def getHouseInformation(myaddress,mycitystatezip):
             return(extractHouseInformation(
                    finaldata["SearchResults:searchresults"]['response']['results']['result']))
     except:
-        return('There was an error reaching the house information')
+        return('There was an error reaching the house information: %s, %s'%(myaddress, mycitystatezip))
 
 
 def extractHouseInformation(houseinfodict):
