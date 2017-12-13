@@ -2,9 +2,6 @@ from flask import Flask, render_template, flash, redirect, request, url_for, sen
 from data import *
 import time
 
-# import sys, os
-# sys.path.append(os.path.join(os.path.dirname(__file__),"lib/python2.7/site-packages/"))
-
 app = Flask(__name__)
 
 @app.route('/')
