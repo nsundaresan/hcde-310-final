@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id='about'>
+      </br>
+      <h3>Neighborhood Tab</h3>
+      <p>This tab is indended for users who would like to see incidence information for a general area of Seattle.
+        If you would like to look into a particular address, please check out the "Address" tab</p>
+      <p>For looking at information about a particular neighborhood in Seattle, follow these steps:</p>
+      <ol>
+        <li>Select neighborhood from options on bottom left side</li>
+        <li>From here the map should display the selected neighborhood with the selected type of data you want.
+          You can zoom in and out however you want from here.</li>
+      </ol>
+      </br>
+      <h3>Address Tab</h3>
+      <p>This tab is intended for users who would like to see incidence information around a particular address in Seattle.
+        If you would like to look for neighborhood level information, just zoom out or click to the "Neighborhood" tab.</p>
+      <p>Please note that this will only work for <em>residences for sale</em> in Seattle.</p>
+      <p>For looking at information about a particular residence for sale in Seattle, follow these steps:</p>
+      <ol>
+        <li>Type in the street your residence of interest is on inside the "Street" text box.</li>
+        <li>Type in the city, state, and zipcode your residence of interest is in inside the "City, State, and Zip Code"
+          text box.</li>
+        <li>Click "Enter" to change the map to focus on your residence of interest.</li>
+        <li>'From here the map should display the selected house, with the type of data you want to see.
+          You can zoom in and out however you want from here.</li>
+      </ol>
+      <h3>Manipulating Data Points</h3>
+      <p>You can manipulate the data you see by clicking any item on the legend to hide it. Double clicking on an item
+        will isolate it, and hide all other points. Double clicking again will bring all points back onto the map.
+        You can zoom in and out by scrolling up and down, to pan, click and drag.</p>
+    </div>
+{% endblock %}
